@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+  <div class="container">
+    <div class="img">
+        <div class="img-box">
+             <img id="img">
+            </div>
+        
+    
+        <div class="upload">
+            <label for="upload">upload</label>
+            <input type="file" id="upload">
+        </div>
+    </div>
+    <div class="filter">
+
+        <ul>
+            <li>
+                <label for="saturation" >saturation</label>
+                <input type="range" id="saturation" min="0" max="200"  value="100">
+            </li>
+
+            <li>
+                <label for="contrast" >contrast</label>
+                <input type="range" id="contrast" min="0" max="200" value="100">
+            </li>
+
+            <li>
+                <label for="brightness" >brightness</label>
+                <input type="range" id="brightness" min="0" max="200"  value="100">
+            </li>
+
+            <li>
+                <label for="sepia" >sepia</label>
+                <input type="range" id="sepia" min="0" max="200"  value="0">
+            </li>
+
+            <li>
+                <label for="grayscale" >grayscale</label>
+                <input type="range" id="grayscale" min="0" max="1"   step=".1" value="0">
+            </li>
+
+            <li>
+                <label for="blur" >blur</label>
+                <input type="range" id="blur" min="0" max="10"  step=".1" value="0">
+            </li>
+            
+
+            <li>
+                <label for="hue-rotate" >hue-rotate</label>
+                <input type="range" id="hue-rotate" min="0" max="350"  value="0">
+            </li>
+
+            <li class="down">
+
+                <a id="download" download="true">download</a>
+                <span id="reset">reset</span>
+            </li>
+        </ul>
+    </div>
+  </div>
+
+  <script src="image.js"  ></script>
+</body>
+</html>
